@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/bitrise-io/go-steputils/stepconf"
+	"github.com/nacho4d/go-steputils/stepconf"
 )
 
 func Test_fraction(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bitrise-io/go-steputils/stepconf"
 	"github.com/bitrise-io/go-utils/log"
+	"github.com/nacho4d/go-steputils/stepconf"
 	"google.golang.org/api/androidpublisher/v3"
 	"google.golang.org/api/option"
 )
@@ -151,6 +151,7 @@ func main() {
 	// Getting configs
 	fmt.Println()
 	log.Infof("Getting configuration")
+	log.Infof("Special log n4----")
 	var configs Configs
 	if err := stepconf.Parse(&configs); err != nil {
 		failf("Couldn't create config: %s\n", err)
@@ -160,7 +161,7 @@ func main() {
 		failf(err.Error())
 	}
 	log.SetEnableDebugLog(configs.IsDebugLog)
-	log.Donef("Configuration read successfully")
+	log.Donef("Configuration read successfully n4")
 
 	//
 	// Create client and service
